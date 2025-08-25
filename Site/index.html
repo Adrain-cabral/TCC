@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Dados - Seu TCC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style 1.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="world_map.png" alt="Mapa Mundial" class="world-map">
+            </div>
+    </header>
+
+    <main>
+        <section id="home-buttons">
+            <button class="nav-button" data-target="movimentacao-comercial">movimentação comercial</button>
+            <button class="nav-button" data-target="refugiados-imigrantes">refugiados/ imigrantes</button>
+            <button class="nav-button" data-target="propagacao-doencas">propagação de doenças</button>
+            <button class="nav-button" data-target="concentracao-poluentes">concentração de poluentes</button>
+            <button class="nav-button" data-target="zonas-lazer">zonas de intensidades de pessoas para lazer</button>
+        </section>
+
+        <section id="content-display">
+            <div id="concentracao-poluentes-content" class="content-section hidden">
+                <div class="info-box">
+                    <h3>Texto explicando sobre a poluição</h3>
+                    <p>Aqui você colocará um texto detalhado sobre a concentração de poluentes, seus impactos, métodos de medição, etc. Este texto pode ser mais longo e informativo.</p>
+                </div>
+                <div class="rank-box">
+                    <h3>Rank de cidades mais poluídas</h3>
+                    <p>medida em: (MP10 (µg/m3 24h))</p>
+                    <ol>
+                        <li>Guarulhos</li>
+                        <li>Mogi Mirim</li>
+                        <li>Santo Leonardo</li>
+                        <li>Santos</li>
+                        <li>Cidade Tiradentes</li>
+                        <li>etc</li>
+                        <li>etc</li>
+                        <li>etc</li>
+                    </ol>
+                </div>
+
+                <div class="map-actions">
+                    <button class="map-button" data-map="poluicao">Clique aqui para ver o mapa (quando clicar vai aparecer aqui embaixo)</button>
+                    <button class="graph-button">Clique aqui para ver o grafico</button>
+                </div>
+
+                <div id="map-poluicao" class="map-container hidden">
+                    <p class="map-title">Mapa poluição</p>
+                    <div id="poluicao-map" style="height: 400px; width: 100%;"></div>
+                    <button class="saiba-mais-button">saiba mais</button>
+                </div>
+
+                 <div id="graph-poluicao" class="graph-container hidden">
+                    <p>Espaço para o gráfico de poluição</p>
+                    <img src="placeholder_graph.png" alt="Gráfico de Poluição" style="max-width: 100%;">
+                </div>
+            </div>
+
+            <div id="movimentacao-comercial-content" class="content-section hidden">
+                <h2>Movimentação Comercial</h2>
+                <p>Informações e mapas sobre movimentação comercial.</p>
+                 <div id="map-comercial" class="map-container hidden">
+                    <p class="map-title">Mapa de Movimentação Comercial</p>
+                    <div id="comercial-map" style="height: 400px; width: 100%;"></div>
+                    <button class="saiba-mais-button">saiba mais</button>
+                </div>
+            </div>
+
+            <div id="refugiados-imigrantes-content" class="content-section hidden">
+                <h2>Refugiados/Imigrantes</h2>
+                <p>Informações e mapas sobre refugiados e imigrantes.</p>
+                 <div id="map-refugiados" class="map-container hidden">
+                    <p class="map-title">Mapa de Refugiados/Imigrantes</p>
+                    <div id="refugiados-map" style="height: 400px; width: 100%;"></div>
+                    <button class="saiba-mais-button">saiba mais</button>
+                </div>
+            </div>
+
+            <div id="propagacao-doencas-content" class="content-section hidden">
+                <h2>Propagação de Doenças</h2>
+                <p>Informações e mapas sobre propagação de doenças.</p>
+                 <div id="map-doencas" class="map-container hidden">
+                    <p class="map-title">Mapa de Propagação de Doenças</p>
+                    <div id="doencas-map" style="height: 400px; width: 100%;"></div>
+                    <button class="saiba-mais-button">saiba mais</button>
+                </div>
+            </div>
+
+            <div id="zonas-lazer-content" class="content-section hidden">
+                <h2>Zonas de Lazer</h2>
+                <p>Informações e mapas sobre zonas de lazer.</p>
+                 <div id="map-lazer" class="map-container hidden">
+                    <p class="map-title">Mapa de Zonas de Lazer</p>
+                    <div id="lazer-map" style="height: 400px; width: 100%;"></div>
+                    <button class="saiba-mais-button">saiba mais</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    <script src="script.js"></script>
+</body>
+        <footer>
+<p style="text-align: center;">Este texto está centralizado.</p>
+        </footer>
+</html>

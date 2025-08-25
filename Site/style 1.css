@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #d2b48c; /* Cor de papel envelhecido */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #a07a50;
+}
+
+.header-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.world-map {
+    width: 100%; /* Ajuste conforme necessário */
+    height: auto;
+    opacity: 0.7; /* Para dar um ar de fundo */
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#home-buttons, #footer-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.nav-button, .footer-nav-button {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover, .footer-nav-button:hover {
+    background-color: #d0d0d0;
+}
+
+#content-display {
+    min-height: 400px; /* Para manter o layout mesmo sem conteúdo */
+}
+
+.content-section {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.rank-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.rank-box ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.map-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.map-button, .graph-button, .saiba-mais-button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.graph-button {
+    background-color: #008CBA; /* Azul */
+}
+
+.saiba-mais-button {
+    background-color: #f44336; /* Vermelho */
+    margin-top: 15px;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map-button:hover {
+    background-color: #45a049;
+}
+
+.graph-button:hover {
+    background-color: #007bb5;
+}
+
+.saiba-mais-button:hover {
+    background-color: #da190b;
+}
+
+.map-container {
+    margin-top: 20px;
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center; /* Para centralizar o título do mapa */
+}
+
+.map-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.graph-container {
+    margin-top: 20px;
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Utilitária para ocultar elementos */
+.hidden {
+    display: none;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Dados - Cidade de São Paulo</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="style 1.css">
+    <script src="sitefinal.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="inicio">
+        <h1>Análise Multidimensional da Cidade de São Paulo</h1>
+        <p>Um estudo técnico sobre movimentação comercial, saúde pública, qualidade do ar, zonas de lazer e fluxos migratórios na maior metrópole da América Latina</p>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#mapas">Mapas</a></li>
+            <li><a href="#metodologia">Metodologia</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <h2>Sobre o Projeto</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Este projeto de TCC em Desenvolvimento de Sistemas tem como objetivo analisar e visualizar dados multidimensionais da cidade de São Paulo, integrando informações de diversas fontes para criar uma visão holística da dinâmica urbana.</p>
+                <p>Através de técnicas de análise de dados e visualização geográfica, exploramos cinco eixos principais:</p>
+                <ul style="margin-top: 1rem; margin-left: 1.5rem;">
+                    <li>Movimentação comercial e econômica</li>
+                    <li>Propagação de doenças e saúde pública</li>
+                    <li>Concentração de poluentes e qualidade do ar</li>
+                    <li>Distribuição de zonas de lazer e cultura</li>
+                    <li>Presença de refugiados e imigrantes</li>
+                </ul>
+                <p style="margin-top: 1rem;">O projeto visa auxiliar gestores públicos, pesquisadores e cidadãos a compreenderem as complexas relações entre esses fatores urbanos.</p>
+            </div>
+            <div class="about-image"></div>
+        </div>
+    </section>
+
+    <!-- Seção Mapas -->
+    <section id="mapas">
+        <h2>Mapas Interativos</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">Explore nossos mapas de calor que mostram a distribuição espacial dos diferentes fenômenos analisados na cidade de São Paulo.</p>
+
+       <div class="map-tabs">
+    <button class="active" data-target="#map1">Poluição do Ar</button>
+    <button data-target="#map2">Comércio</button>
+    <button data-target="#map3">Doenças</button>
+    <button data-target="#map4">Lazer</button>
+    <button data-target="#map5">Imigração</button>
+</div>
+
+<div class="map-container">
+    <iframe class="map-iframe" src="final4.html" allowfullscreen="" loading="lazy"></iframe>
+</div>
+<div class="map-container">
+    <iframe class="map-iframe" src="final3.html" allowfullscreen="" loading="lazy"></iframe>
+</div>
+<div class="map-container">
+    <iframe class="map-iframe" src="final5 1 1.html" allowfullscreen="" loading="lazy"></iframe>
+</div>
+<div class="map-container">
+    <iframe class="map-iframe" src="final2.html" allowfullscreen="" loading="lazy"></iframe>
+</div>
+<div class="map-container">
+    <iframe class="map-iframe" src="final.html" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<div class="bg-white shadow-lg rounded-2xl p-4 w-[900px]">
+    <div class="relative w-full h-[500px] overflow-hidden rounded-xl">
+        <div class="align1">
+            <h1 id="map1">Poluição do ar</h1>
+            <img src="mapa do ar.jpg">
+            
+            <h1 id="map2">Comércio</h1>
+            <img src="mapa das emrpesas.jpg">
+            
+            <h1 id="map3">Doenças</h1>
+            <img src="mapa das doenças.jpg">
+            
+            <h1 id="map4">Lazer</h1>
+            <img src="mapa lazer.jpg">
+            
+            <h1 id="map5">Imigração</h1>
+            <img src="mapa dos imigrantes.jpg">
+        </div> 
+    </div>
+</div>
+<div class="bg-white shadow-lg rounded-2xl p-4 w-[900px]">
+    <div class="relative w-full h-[500px] overflow-hidden rounded-xl">
+        <div class="align1">
+            
+            <h1 id="map2">Comércio</h1>
+            <img src="CNPJ.jpeg">
+            
+            <h1 id="map3">Doenças</h1>
+            <img src="Doente.jpeg">
+            
+            <h1 id="map4">Lazer</h1>
+            <img src="Carnaval.jpeg">
+            
+            <h1 id="map5">Imigração</h1>
+            <img src="Imigrantes.jpeg">
+        </div> 
+    </div>
+</div>
+    </section>
+
+    <!-- Seção Metodologia -->
+    <section id="metodologia">
+        <h2>Metodologia</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">Nosso projeto utiliza uma abordagem técnica integrada para coleta, processamento e visualização de dados.</p>
+
+        <div class="methodology-grid">
+            <div class="method-card">
+                <h3>Coleta de Dados</h3>
+                <p>Integração de APIs públicas (IBGE, CETESB, Secretaria de Saúde), web scraping de portais governamentais e parcerias com ONGs para dados de imigração.</p>
+            </div>
+            <div class="method-card">
+                <h3>Processamento</h3>
+                <p>Limpeza e normalização dos dados usando Python (Pandas, NumPy), com armazenamento em banco de dados PostgreSQL com extensão PostGIS para dados geográficos.</p>
+            </div>
+            <div class="method-card">
+                <h3>Análise</h3>
+                <p>Aplicação de algoritmos de machine learning para identificar padrões e correlações entre os diferentes conjuntos de dados.</p>
+            </div>
+            <div class="method-card">
+                <h3>Visualização</h3>
+                <p>Desenvolvimento de mapas interativos usando Leaflet.js e heatmaps personalizados, com backend em Node.js para servir os dados processados.</p>
+            </div>
+            <div class="method-card">
+                <h3>Tecnologias</h3>
+                <p>Stack completo: Python (análise), JavaScript (visualização), PostgreSQL (armazenamento), Docker (containerização), Git (controle de versão).</p>
+            </div>
+            <div class="method-card">
+                <h3>Ética de Dados</h3>
+                <p>Todos os dados pessoais são anonimizados, com especial atenção aos dados sensíveis de saúde e imigração, seguindo a LGPD.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>Projeto de TCC em Desenvolvimento de Sistemas - Análise de Dados da Cidade de São Paulo</p>
+        <p style="margin-top: 1rem;">© 2025 - Todos os direitos reservados</p>
+    </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.map-tabs button');
+    const headerHeight = document.querySelector('header') ? document.querySelector('header').offsetHeight : 0;
+    const offset = headerHeight + 20; // Espaçamento adicional
+
+    // Função para rolagem suave
+    function smoothScrollTo(targetId) {
+        const targetElement = document.querySelector(targetId);
+        if (!targetElement) return;
+        
+        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+        
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    }
+
+    // Adiciona evento de clique a todos os botões
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            
+            // Remove a classe active de todos os botões
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Adiciona a classe active ao botão clicado
+            this.classList.add('active');
+            
+            // Executa a rolagem suave
+            smoothScrollTo(targetId);
+        });
+    });
+
+    // Detecta a seção visível durante a rolagem para atualizar o botão ativo
+    function updateActiveButton() {
+        const scrollPosition = window.scrollY;
+        
+        // Encontra a seção atual com base na posição de rolagem
+        let currentSection = '';
+        document.querySelectorAll('h1[id]').forEach(section => {
+            const sectionTop = section.offsetTop - offset;
+            if (scrollPosition >= sectionTop) {
+                currentSection = '#' + section.id;
+            }
+        });
+        
+        // Atualiza o botão ativo
+        if (currentSection) {
+            buttons.forEach(button => {
+                button.classList.remove('active');
+                if (button.getAttribute('data-target') === currentSection) {
+                    button.classList.add('active');
+                }
+            });
+        }
+    }
+
+    // Atualiza o botão ativo durante a rolagem
+    window.addEventListener('scroll', updateActiveButton);
+    window.addEventListener('resize', updateActiveButton); // Atualiza no redimensionamento
+});
+</script>
+</body>
+</html>
